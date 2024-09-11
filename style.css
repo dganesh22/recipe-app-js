@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+#recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 10px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+#recipe-dialog {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  transform: translate(-40%, -10%);
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn {
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.danger {
+  color: red;
+  float: right;
+}
